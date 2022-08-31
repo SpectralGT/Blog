@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/SpectralGT/Blog/issues"
   },
-  "homepage": "https://github.com/SpectralGT/Blog#readme"
+  "homepage": "https://github.com/SpectralGT/Blog#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^1.0.2"
+  }
 }
