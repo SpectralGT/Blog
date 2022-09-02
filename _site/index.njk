@@ -4,4 +4,7 @@ permalink: /
 ---
 Hello! Welcome to the Eleventy + Netlify Blog homepage.
 
-<a href="/posts">All the posts</a>
+<div class="posts">
+{% set postslist = collections.posts %}
+{% include "postslist.njk" %}
+</div>
