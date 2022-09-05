@@ -1,20 +1,9 @@
-<ul class="posts-list">
+<div class="container">
     {% for post in postslist %}
-    <li class="posts-item">
-        <div class="post">
-            <div class="post-image">
-                <img class="image" src="{{post.data.featuredImage}}"></img>
-            </div>
-            <div class="post-content">
-                <strong>
-                    <a href="{{ post.url | url }}">{{ post.data.title }}</a>
-                </strong>
-            -
-            <span>
-                    {{ post.data.description }}
-                </span>
-            </div>
-        </div>
-    </li>
+    <div class="box">
+        <img class="image" src="{{post.data.featuredImage}}"></img>
+        <h3><a href="{{ post.url | url }}">{{ post.data.title }}</a></h3>
+        <p>{{ post.data.description }}</p>
+    </div>
     {% endfor %}
-</ul>
+</div>
