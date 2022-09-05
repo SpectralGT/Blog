@@ -1,9 +1,11 @@
 <div class="container">
     {% for post in postslist %}
-    <div class="box">
-        <img class="image" src="{{post.data.featuredImage}}"></img>
-        <h3><a href="{{ post.url | url }}">{{ post.data.title }}</a></h3>
-        <p>{{ post.data.description }}</p>
-    </div>
+        <div class="box">
+            <a href="{{ post.url | url }}">
+                <img class="image" src="{{post.data.featuredImage}}"></img>
+                <h3>{{ post.data.title }}</h3>
+                <p>{{ post.data.description }}</p>
+            </a>
+        </div>
     {% endfor %}
 </div>

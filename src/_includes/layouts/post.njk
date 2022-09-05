@@ -1,6 +1,15 @@
---- 
-layout: layouts/base.njk 
----
-<h2>{{ title }}</h2>
-<img src="{{ featuredImage | url }}" alt="{{ featuredImage }}"></img>
-<p>{{ content | safe }}</p>
+<html>
+  <head>
+    <title>Atharv's Blog</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport"/>
+    <link rel="stylesheet" href="/styles/post.css">
+  </head>
+  <body>
+    <div class="image-container">
+      <img src="{{ featuredImage | url }}" alt="{{ featuredImage }}"></img>
+      <h1 class="title">{{ title }}</h1>
+    </div>
+    
+    <p>{{ content | safe }}</p>
+  </body>
+</html>

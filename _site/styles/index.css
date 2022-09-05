@@ -15,7 +15,7 @@ body{
 }
 
 a{
-  color: var(--primary);
+  color: var(--text);
   text-decoration-line: none;
 }
 
