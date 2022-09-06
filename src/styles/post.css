@@ -17,6 +17,11 @@ body{
 
 }
 
+a{
+  color: var(--text);
+  text-decoration-line: none;
+}
+
 h1{
   font-size: 10vw;
   width: 100%;
@@ -49,4 +54,25 @@ img{
   top: 80%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+
+.header{
+  width: 100vw;
+  height: fit-content;
+  margin: 0px;
+  padding: 1px;
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.site-identity{
+  width: 100%;
+  height: fit-content;
+}
+
+.site-identity-text{
+  font-size: 2rem;
+  text-align: left;
+  font-weight: 900;
 }
