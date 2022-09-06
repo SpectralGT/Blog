@@ -1,12 +1,15 @@
 :root{
   --primary:#DA0037;
   --main: #171717;
+  --main-dark:#101010;
   --secondary: #272727;
   --text: #EDEDED;
 }
 
 *{
   box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
 }
 body{
   background-color: var(--main);
@@ -22,23 +25,17 @@ a{
 .container{
   display: flex;
   flex-direction: column;
-  align-items: center;
+  justify-items: center;
   width: 100%;
-  height: auto;
-  margin: 30px auto;
+  height: fit-content;
 }
 .box{
-  width: 100%;
+  width: 90%;
   height: auto;
-  margin-right: 1%;
   border-radius: 10px;
   transition: 0.9;
   background-color: var(--secondary);
-  margin: 20px 20px;
-}
-.box:hover{
-  box-shadow: 0 0 11px rgba(33, 33, 33, 0.5);
-  cursor: pointer;
+  margin: 0px 5%;
 }
 img{
   aspect-ratio: 1/1;
@@ -52,12 +49,38 @@ h3,p{
   text-align: center;
 }
 p{
-  font-size: 15px;
-  padding: 0 5px;
+  font-size: 6vw;
 }
 
 @media only screen and (min-width: 400px){
   .container{
       flex-direction: row;
   }
+  .box{
+    height: 50vh;
+    width: auto;
+  }
+  p{
+    font-size: 2vw;
+  }
+}
+
+.header{
+  width: 100vw;
+  height: fit-content;
+  margin: 0px;
+  padding: 1px;
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.site-identity{
+  width: 100%;
+  height: fit-content;
+}
+
+.site-identity-text{
+  font-size: 2rem;
+  text-align: left;
+  font-weight: 900;
 }
