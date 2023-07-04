@@ -1,3 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans");
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: "Fira Sans" , sans-serif;
+}
+
+
 body{
-    background-color: red;
+    background-color: hsl(0, 0%, 10%);
+    color: white;
+    font-family: Helvetica, sans-serif;
+}
+
+.header{
+    overflow: hidden;
+    background-color: hsl(0, 0%, 5%);
+    padding: 10px 20px;
+}
+.header .logo{
+    font-family: Impact;
+    float: left;
+    font-size: 2em;
+    text-align: center;
+    color: white;   
+    text-decoration: none;
+    font-weight: 900;
+    border-radius: 100%;
+}
+.header .about{
+    margin: 0px auto;
+    position: relative;
+    top: 50%;
+    transform: translateY(50%);
+    color: #ddd;
+}
+
+.header a{
+    margin: 0px auto;
+    float: right;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.5em;
+}
+
+
+.header a.active{
+    color: red;
 }

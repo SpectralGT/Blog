@@ -3,8 +3,8 @@ import matter from "gray-matter";
 import md from 'markdown-it';
 
 // The page for each post
-export default function Post({frontmatter, content}) {
-
+export default function Post({froatter, content}) {
+ntm
     const {title, author, category, date, bannerImage, tags} = frontmatter
 
     return <main>

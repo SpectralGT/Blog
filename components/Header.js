@@ -1,5 +1,12 @@
 function Header (props){
-    return <h1>Header Component</h1>
+    return (
+        <div className="header">
+            <div className="logo">
+                <a href="http://localhost:3000">AS</a>
+            </div>
+            <a className="about" href="">About</a>
+        </div>
+    )
 }
 
 export default Header
