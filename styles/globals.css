@@ -1,45 +1,55 @@
 @import url("https://fonts.googleapis.com/css2?family=Fira+Sans");
+:root{
+    --color-1: #5CDB95;
+    --color-2 : #05386B;
+    --color-3 : #379683;
+    --color-4 : #8ee4af;
+    --color-5 : #edf5e1;
 
+}
 *{
+    box-sizing: border-box;
     margin: 0px;
     padding: 0px;
-    font-family: "Fira Sans" , sans-serif;
+    font-family: monospace;
 }
 
 
 body{
-    background-color: hsl(0, 0%, 10%);
-    color: white;
+    background-color: var(--color-4);
+    color: var(--color-5);
     font-family: Helvetica, sans-serif;
 }
 
 .header{
-    overflow: hidden;
-    background-color: hsl(0, 0%, 5%);
+    position: relative;
     padding: 10px 20px;
+    width: 100vw;
+    border-bottom: var(--color-2) 3px solid;
+    overflow: hidden;
+    background-color: transparent;
+    font-size: 1em;
 }
 .header .logo{
     font-family: Impact;
     float: left;
     font-size: 2em;
     text-align: center;
-    color: white;   
+    color: var(--color-2);   
     text-decoration: none;
     font-weight: 900;
-    border-radius: 100%;
 }
 .header .about{
-    margin: 0px auto;
     position: relative;
     top: 50%;
     transform: translateY(50%);
-    color: #ddd;
+    color: var(--color-2);
 }
 
 .header a{
     margin: 0px auto;
     float: right;
-    color: white;
+    color: var(--color-2);
     text-align: center;
     text-decoration: none;
     font-size: 1.5em;
@@ -48,4 +58,38 @@ body{
 
 .header a.active{
     color: red;
+}
+
+
+main{
+    width: 100vw;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-auto-rows: 30vh;
+}
+article{
+    overflow: hidden;
+    border-radius: 10px;
+    border: var(--color-2) 3px solid;
+    margin: 10px;
+    padding: 20px;
+    background-color: var(--color-1);
+}
+
+article a{
+    font-size: 2rem;
+    color:var(--color-2);
+    text-decoration: none;
+}
+article h3{
+    font-size: 2em;
+    color: var(--color-5);
+}
+
+article .category{
+    border-radius: 5px;
+    font-size: 2em;
+    background-color: var(--color-2);
+    width: fit-content;
+    padding: 2px 20px;
 }
