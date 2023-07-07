@@ -1,19 +1,18 @@
 import fs from "fs";
 import matter from "gray-matter";
-import md from 'markdown-it';
+import md from "markdown-it";
+import "../../styles/post.css"
 
 // The page for each post
-export default function Post({froatter, content}) {
-ntm
-    const {title, author, category, date, bannerImage, tags} = frontmatter
+export default function Post({ frontmatter, content }) {
+  const { title, date } = frontmatter;
 
-    return <main>
-        <img src={bannerImage}/>
-        <h1>{title}</h1>
-        <h2>{author} || {date}</h2>
-        <h3>{category} || {tags.join()}</h3>
-        <div dangerouslySetInnerHTML={{ __html: md().render(content) }} />
+  return (
+    <main>
+      <h1>{title}</h1>
+      <div className="content"dangerouslySetInnerHTML={{ __html: md().render(content) }} />
     </main>
+  );
 }
 
 // Generating the paths for each post
@@ -33,15 +32,14 @@ export async function getStaticPaths() {
   };
 }
 
-
 // Generate the static props for the page
 export async function getStaticProps({ params: { slug } }) {
-    const fileName = fs.readFileSync(`posts/${slug}.md`, 'utf-8');
-    const { data: frontmatter, content } = matter(fileName);
-    return {
-      props: {
-        frontmatter,
-        content,
-      },
-    };
-  }
+  const fileName = fs.readFileSync(`posts/${slug}.md`, "utf-8");
+  const { data: frontmatter, content } = matter(fileName);
+  return {
+    props: {
+      frontmatter,
+      content,
+    },
+  };
+}

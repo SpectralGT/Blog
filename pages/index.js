@@ -1,6 +1,5 @@
 import fs from "fs";
 import matter from "gray-matter";
-import Image from "next/image";
 import Link from "next/link";
 import LandingScreen from "components/LandingScreen";
 
@@ -14,16 +13,16 @@ export default function Index({ posts }) {
           //extract slug and frontmatter
           const { slug, frontmatter } = post;
           //extract frontmatter properties
-          const { title, author, category, date, bannerImage, tags } =
+          const { title,description, date} =
             frontmatter;
 
           //JSX for individual blog listing
           return (
-            <article key={title}>
+            <article key={slug}>
               <Link href={`/posts/${slug}`}>
                 <h1>{title}</h1>
               </Link>
-              <h3>{tags}</h3>
+              <h3>{description}</h3>
               <h3>{date}</h3>
             </article>
           );

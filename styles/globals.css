@@ -31,6 +31,7 @@ body{
     font-size: 1em;
 }
 .header .logo{
+    text-shadow: 3px 3px var(--color-1);
     float: left;
     font-family: Impact;
     font-size: 3em;
@@ -57,7 +58,7 @@ body{
 main{
     margin-top: 10px;
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(4,1fr);
     grid-auto-rows: 30vh;
 }
 article{
@@ -79,3 +80,9 @@ article h3{
     font-size: 1em;
     color: black;
 }
+
+@media screen and (max-width: 800px) {
+    main{
+      grid-template-columns: 1fr;
+    }
+  }

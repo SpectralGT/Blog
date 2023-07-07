@@ -1,0 +1,30 @@
+body{
+    background-color: hsl(163, 42%, 87%);
+    color: rgb(28, 63, 57);
+}
+
+.header{
+    position: relative;
+}
+
+main{
+    display: block;
+}
+
+h1{
+    display: block;
+    margin-top: 1vh;
+    text-align: center;
+    font-size: 4em;
+    text-shadow: 1px 1px 1px black;
+}
+
+h2{
+    margin-top: 10vh;
+    font-size: 1em;
+}
+
+.content{
+    padding: 10px;
+    font-size: 2em;
+}

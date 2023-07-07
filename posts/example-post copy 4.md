@@ -1,7 +1,7 @@
 ---
 title: "This is an example post"
 description: "example"
-date: "2022-03-13
+date: "2022-03-13"
 ---
 
 ## This is an example blog post

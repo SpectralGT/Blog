@@ -1,10 +1,12 @@
+import Link from "next/link"
+
 function Header (props){
     return (
         <div className="header">
             <div className="logo">
-                <a href="http://localhost:3000">AS</a>
+                <Link href="/">AS</Link>
             </div>
-            <a className="about" href="">About</a>
+            <Link className="about" href="/">About</Link>
         </div>
     )
 }
