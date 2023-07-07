@@ -25,7 +25,6 @@ export default function Index({ posts }) {
               </Link>
               <h3>{tags}</h3>
               <h3>{date}</h3>
-              <h3 className="category">{category}</h3>
             </article>
           );
         })}

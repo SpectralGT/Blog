@@ -5,6 +5,7 @@ import Footer from "./Footer";
 export default function Layout({ children }) {
   return (
     <div>
+    <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
       <Header />
       {children}
       <Footer />
