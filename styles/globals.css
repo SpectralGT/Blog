@@ -4,7 +4,8 @@
     --color-2 : #05386b;
     --color-3 : #379683;
     --color-4 : #1b7a45;
-    --color-5 : #edf5e1;
+    --color-5 : #f5f5f5;
+    --color-6 : #94ebbb;
 
 }
 *{
@@ -25,7 +26,6 @@ body{
     position: absolute;
     width: 100%;
     padding: 0px 10px;
-    border-bottom: var(--color-2) 3px solid;
     overflow: hidden;
     background-color: rgb(0, 0, 0,0);
     font-size: 1em;
@@ -66,19 +66,19 @@ article{
     padding: 20px;
     overflow: hidden;
     border-radius: 5px;
-    border: var(--color-2) 3px solid;
-    background-color: var(--color-1);
+    border: var(--color-6) 1px solid;
+    background-color: var(--color-4);
 }
 
 article a{
     text-overflow: clip;
     font-size: 1.5em;
-    color:var(--color-2);
+    color:var(--color-5);
     text-decoration: none;
 }
 article h3{
     font-size: 1em;
-    color: black;
+    color: var(--color-6);
 }
 
 @media screen and (max-width: 800px) {

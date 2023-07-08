@@ -1,10 +1,42 @@
-import "../styles/LandingScreen.css"
+import { useEffect } from "react";
+import "../styles/LandingScreen.css";
+import anime from "animejs";
+import Image from "next/image";
 
-export default function LandingScreen(){
-    return(
-        <div className="landingScreen">
-            <span className="text">Atharv
-            Singh</span>
-        </div>
-    )
+
+export default function LandingScreen() {
+  useEffect(() => {
+    var textWrapper = document.querySelector(".text");
+    textWrapper.innerHTML = textWrapper.textContent.replace(
+      /\S/g,
+      "<span class='letter'>$&</span>"
+    );
+
+    anime
+      .timeline({ loop: false})
+      .add({
+        targets: ".text .letter",
+        scale: [4, 1],
+        opacity: [0, 1],
+        translateZ: 0,
+        easing: "easeOutExpo",
+        duration: 950,
+        delay: (el, i) => 70 * i,
+      })
+      .add({
+        targets:".letter:hover",
+        scale : [1,5],
+        easing: "easeOutExpo",
+        duration: 950,
+      })
+  }, []);
+
+  return (
+    <div className="landingScreen">
+    <Image src='/../public/bg.png' alt="bg image" width={5000} height={5000}>
+        
+    </Image>
+      <div className="text">Atharv Singh</div>
+    </div>
+  );
 }
