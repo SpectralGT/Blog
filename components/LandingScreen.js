@@ -33,7 +33,7 @@ export default function LandingScreen() {
 
   return (
     <div className="landingScreen">
-    <Image src='/../public/bg.png' alt="bg image" fill={true} style={{objectFit: "cover"}}>
+    <Image src='/bg.png' alt="bg image" fill={true} style={{objectFit: "cover"}}>
         
     </Image>
       <div className="text">Atharv Singh</div>
