@@ -2,19 +2,23 @@ import fs from "fs";
 import matter from "gray-matter";
 import Link from "next/link";
 import LandingScreen from "components/LandingScreen";
+import bg from "../public/LPbg.jpg";
 
 // The Blog Page Content
 export default function Index({ posts }) {
+  const styling = {
+    backgroundImage: `url('${bg.src}')`,
+    backgroundSize: "cover",
+  };
   return (
-    <>
+    <div style={styling}>
       <LandingScreen />
       <main>
         {posts.map((post) => {
           //extract slug and frontmatter
           const { slug, frontmatter } = post;
           //extract frontmatter properties
-          const { title,description, date} =
-            frontmatter;
+          const { title, description, date } = frontmatter;
 
           //JSX for individual blog listing
           return (
@@ -28,7 +32,7 @@ export default function Index({ posts }) {
           );
         })}
       </main>
-    </>
+    </div>
   );
 }
 

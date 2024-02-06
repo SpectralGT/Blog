@@ -3,7 +3,6 @@ import "../styles/LandingScreen.css";
 import anime from "animejs";
 import Image from "next/image";
 
-
 export default function LandingScreen() {
   useEffect(() => {
     var textWrapper = document.querySelector(".text");
@@ -13,7 +12,7 @@ export default function LandingScreen() {
     );
 
     anime
-      .timeline({ loop: false})
+      .timeline({ loop: false })
       .add({
         targets: ".text .letter",
         scale: [4, 1],
@@ -24,19 +23,22 @@ export default function LandingScreen() {
         delay: (el, i) => 70 * i,
       })
       .add({
-        targets:".letter:hover",
-        scale : [1,5],
+        targets: ".letter:hover",
+        scale: [1, 5],
         easing: "easeOutExpo",
         duration: 950,
-      })
+      });
   }, []);
 
   return (
     <div className="landingScreen">
-    <Image src='/bg.png' alt="bg image" fill={true} style={{objectFit: "cover"}}>
-        
-    </Image>
-      <div className="text">Atharv Singh</div>
+      {/* <Image src="/LPbg.jpg" alt="bg image" fill={true} style={{ objectFit: "cover" }}></Image> */}
+      <div className="glass">
+        <div className="textContainer">
+          <div className="text">ATHARV SINGH</div>
+          <div className="description">description aslfkasjflaskjfl;asjfasklfj</div>
+        </div>
+      </div>
     </div>
   );
 }
