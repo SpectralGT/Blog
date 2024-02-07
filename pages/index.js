@@ -1,9 +1,9 @@
+import "../styles/articles.css";
 import fs from "fs";
 import matter from "gray-matter";
 import Link from "next/link";
 import LandingScreen from "components/LandingScreen";
-import bg from "../public/LPbg.jpg";
-
+import bg from "../public/bg.jpg";
 // The Blog Page Content
 export default function Index({ posts }) {
   const styling = {

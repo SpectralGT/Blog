@@ -1,16 +1,26 @@
 import fs from "fs";
 import matter from "gray-matter";
 import md from "markdown-it";
-import "../../styles/post.css"
+import "../../styles/post.css";
+import Header from "@/components/Header";
+import bg from "../../public/bg.jpg";
 
-// The page for each post
 export default function Post({ frontmatter, content }) {
+  const styling = {
+    backgroundImage: `url('${bg.src}')`,
+    backgroundSize: "cover",
+  };
+
+  // The page for each post
   const { title, date } = frontmatter;
 
   return (
-    <main>
-      <h1>{title}</h1>
-      <div className="content"dangerouslySetInnerHTML={{ __html: md().render(content) }} />
+    <main style={styling}>
+      <Header />
+      <div className="glass">
+        <h1>{title}</h1>
+        <div className="content" dangerouslySetInnerHTML={{ __html: md().render(content) }} />
+      </div>
     </main>
   );
 }

@@ -1,30 +1,46 @@
-body{
-    background-color: hsl(105, 76%, 92%);
-    color: rgb(0, 0, 0);
+html,
+body,
+#__next,
+#__next > div,
+main {
+  height: 100%;
 }
 
-.header{
-    position: relative;
+* {
+  margin: 0px;
 }
 
-main{
-    display: block;
+main {
+  width: 100%;
+  display: block;
+}
+.glass {
+  display: block;
+  padding: 2rem;
+  margin: auto;
+  width: 90vw;
+  height: max-content;
+  background: rgba(0, 0, 0, 0.1);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
-h1{
-    display: block;
-    margin-top: 1vh;
-    text-align: center;
-    font-size: 4em;
-    text-shadow: 1px 1px 1px #5cdb95;
+h1 {
+  display: block;
+  text-align: center;
+  font-size: 4em;
+  text-shadow: 1px 1px 1px var(--color-text1);
 }
 
-h2{
-    margin-top: 10vh;
-    font-size: 1em;
+h2 {
+  margin-top: 10vh;
+  font-size: 1em;
 }
 
-.content{
-    padding: 10px;
-    font-size: 2em;
+.content {
+  padding: 10px;
+  font-size: 2em;
 }
