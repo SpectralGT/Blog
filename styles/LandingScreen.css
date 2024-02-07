@@ -30,8 +30,8 @@
   transform: translate(-50%, -50%);
 }
 .text {
-  font-family: arial black, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-  font-size: min(10vw, 100px);
+  font-family: "Staatliches", Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: min(8vw, 80px);
   text-align: center;
   width: 100%;
   font-weight: 900;
@@ -41,8 +41,8 @@
   width: 100%;
   opacity: 0.9;
   height: max-content;
-  font-family: arial, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-  font-size: min(5vw, 50px);
+  font-family: "Teko", Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: min(5vw, 30px);
   text-wrap: wrap;
   text-align: center;
 }

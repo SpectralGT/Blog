@@ -1,12 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Fira+Sans");
+@import url("https://fonts.googleapis.com/css2?family=Staatliches&family=Teko:wght@300&display=swap");
 :root {
   --color-text1: #f5f5f5;
   --color-text2: #151515;
-
 }
 * {
   box-sizing: border-box;
   margin: 0px;
   padding: 0px;
-  font-family: monospace;
 }
