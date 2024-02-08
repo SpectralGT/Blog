@@ -30,7 +30,7 @@
   transform: translate(-50%, -50%);
 }
 .text {
-  font-family: "Staatliches", Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-family: "Staatliches", sans-serif !important;
   font-size: min(8vw, 80px);
   text-align: center;
   width: 100%;
@@ -48,5 +48,7 @@
 }
 
 .letter {
+  font-family: "Staatliches", sans-serif !important;
+
   display: inline-block;
 }

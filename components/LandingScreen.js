@@ -35,8 +35,10 @@ export default function LandingScreen() {
       {/* <Image src="/LPbg.jpg" alt="bg image" fill={true} style={{ objectFit: "cover" }}></Image> */}
       <div className="glass">
         <div className="textContainer">
-          <div className="text">Hi, I'm ATHARV SINGH</div>
-          <div className="description">I’m a UX/UI designer, game and full-stack developer</div>
+          <div className="text">{`Hi, I'm ATHARV SINGH`}</div>
+          <div className="description">
+            I’m a UX/UI designer, game and full-stack developer and This is my Blog
+          </div>
         </div>
       </div>
     </div>
